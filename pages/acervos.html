@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gestão de Acervos - Biblioteca+</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    input, button { padding: 8px; margin-right: 5px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    th { background: #eee; }
+    #loading { display: none; font-style: italic; }
+  </style>
+</head>
+<body>
+
+  <h1>Gestão de Acervos - Biblioteca+</h1>
+
+  <div>
+    <input type="text" id="inputBusca" placeholder="Buscar por título" />
+    <button id="btnBuscar">Buscar</button>
+    <button id="btnLimpar">Limpar</button>
+  </div>
+
+  <p id="loading">Carregando...</p>
+
+  <table id="tabelaAcervos">
+    <thead>
+      <tr>
+        <th>Título</th>
+        <th>Autor</th>
+        <th>Tipo</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Resultados aqui -->
+    </tbody>
+  </table>
+
+  <script src="acervos.js"></script>
+
+</body>
+</html>
