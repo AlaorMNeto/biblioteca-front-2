@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservas | Biblioteca+</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Controle de Reservas</h1>
+        <nav>
+            <a href="../index.html">Início</a>
+            <a href="emprestimos.html">Empréstimos</a>
+            <a href="reservas.html">Reservas</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Reservas Ativas</h2>
+            <ul id="reservasLista"></ul>
+        </section>
+
+        <section>
+            <h2>Fazer Nova Reserva</h2>
+            <form id="novaReserva">
+                <input type="text" id="usuarioReserva" placeholder="Nome do usuário" required>
+                <input type="text" id="itemReserva" placeholder="Nome do item" required>
+                <button type="submit">Registrar Reserva</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Biblioteca+ Soluções</p>
+    </footer>
+    <script src="../scripts/reservas.js"></script>
+</body>
+</html>
